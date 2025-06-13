@@ -2,6 +2,7 @@
 
 > This project was created as part of a technical interview process. It demonstrates prompt engineering and natural language processing capabilities using OpenAI's API.
 
+## Overview
 This project provides tools for running prompt engineering experiments on airline-related tweets, including entity extraction, sentiment analysis, and combined analysis.
 
 ## Features
@@ -152,6 +153,19 @@ Each result file contains:
 2. Add the experiment to the appropriate prompt functions dictionary
 3. Update the main function to handle your experiment type
 
+## Solution Architecture
+A detailed architecture diagram is available in `experiments/solution_design_simple.md`. The diagram illustrates:
+- Data flow from Twitter API and CSV sources
+- Processing pipeline using GPT-4o-mini
+- Entity extraction and sentiment analysis
+- Data storage and business insights
+- Future expansion opportunities
+
+To view the diagram:
+1. Open `experiments/solution_design_simple.md`
+2. Copy the Mermaid diagram code
+3. Paste into https://mermaid.live to visualize 
+
 ## License
 
 MIT License
@@ -174,4 +188,4 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE. 
+SOFTWARE.
