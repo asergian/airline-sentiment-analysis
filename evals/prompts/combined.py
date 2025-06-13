@@ -43,7 +43,7 @@ def combined_prompt(tweet: str) -> str:
         "sentiment": "positive"
     }}
     
-    If no airlines mentioned, return: {{"airlines": [], "sentiment": "neutral"}}
+    If no airlines mentioned, return: {{"airlines": [], "sentiment": "negative"}}
     
     Tweet to analyze: "{tweet}"'''
 
@@ -96,7 +96,7 @@ Output as JSON array with results for each tweet. Example output:
     }}
 ]
 
-If no airlines mentioned in a tweet, include that tweet with: {{"airlines": [], "sentiment": "neutral"}}'''
+If no airlines mentioned in a tweet, include that tweet with: {{"airlines": [], "sentiment": "negative"}}'''
 
 # Dictionary mapping experiment names to prompt functions
 COMBINED_PROMPT_FUNCS = {
