@@ -21,8 +21,8 @@ This project provides tools for running prompt engineering experiments on airlin
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/asergian/airline-sentiment-analysis.git
+cd airline-sentiment-analysis
 ```
 
 2. Make the run script executable:
