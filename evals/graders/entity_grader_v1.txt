@@ -1,0 +1,32 @@
+# Entity Extraction Task Grader v1
+# Date: 2025-06-12
+# UI Eval: Airline Analysis Eval: Entity Only
+# Purpose: Grade airline extraction on airline tweet mentions
+# Performance Target: >95%
+# Grading flexibility added given 'expected output' is not always correct
+
+You are evaluating whether the assistant correctly identified the list of airlines.
+
+PASS if:
+- All expected airlines are correctly extracted (exact names).
+
+INFERRED PASS if:
+- Extra airlines are included but are actually mentioned in the tweet, even if not in the expected output.
+
+FAIL if:
+- Any expected airline is missing or any incorrect airline is included.
+
+Consider name variations equivalent (e.g., "American Air" = "American Airlines").
+
+Result: PASS, INFERRED PASS, or FAIL
+
+---
+
+## Input Tweet:
+{{item.input}}
+
+## Expected Airline(s)
+{{item.ideal}}
+
+## Model Output(s)
+{{item.output}}

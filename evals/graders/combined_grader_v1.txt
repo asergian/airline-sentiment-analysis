@@ -1,0 +1,37 @@
+# Combined Task Grader v1
+# Date: 2025-06-12
+# UI Eval: Airline Analysis Eval: Combined
+# Purpose: Grade airline extraction + sentiment analysis on airline tweet mentions
+# Performance Target: >90% on both tasks
+# Grading flexibility added given 'expected output' is not always correct or is ambiguous
+
+You are evaluating whether the assistant correctly identified the list of airlines and the sentiment of the tweet toward the specified airline(s).
+
+Please evaluate the 'output' against the 'ideal' and provide a pass/fail score based on the following criteria:
+
+PASS if:
+- All expected airlines are correctly extracted (exact names).
+- Ouputted sentiment exactly matches the expected sentiment (case-insensitive).
+
+INFERRED PASS if:
+- Extra airlines are included but are actually mentioned in the tweet, even if not in the expected output.
+- model output correctly labels the sentiment of the tweet even if it doesn't match expected sentiment.
+
+FAIL if:
+- otherwise.
+
+Consider airline name variations equivalent (e.g., "American Air" = "American Airlines").
+When unsure on sentiment, lean on grading the correctness of the model output vs the expected sentiment, which may be subjective.
+
+Result: PASS, INFERRED PASS, or FAIL
+
+---
+
+## Tweet text
+{{item.input}}
+
+## Ideal output (airline and sentiment)
+{{item.ideal}}
+
+## Model output (airline and sentiment)
+{{item.output}}

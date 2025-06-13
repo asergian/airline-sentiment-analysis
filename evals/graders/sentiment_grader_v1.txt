@@ -1,0 +1,34 @@
+# Sentiment Analysis Task Grader v1
+# Date: 2025-06-12
+# UI Eval: Airline Analysis Eval: Sentiment Only
+# Purpose: Grade sentiment analysis on airline tweet mentions
+# Performance Target: >92%
+# Grading flexibility added given 'expected output' is not always correct or is ambiguous
+
+You are evaluating whether the assistant correctly identified the sentiment of the tweet toward the specified airline.
+
+The assistant's response will be a single word: "positive", "neutral", or "negative".
+
+PASS if:
+- response exactly matches the expected sentiment (case-insensitive).
+
+INFERRED PASS if:
+- model output correctly labels the sentiment of the tweet even if it doesn't match expected sentiment.
+
+FAIL if:
+- otherwise.
+
+When unsure, lean on grading the correctness of the model output vs the expected sentiment, which may be subjective.
+
+Result: PASS, INFERRED PASS, or FAIL
+
+---
+
+## Input Tweet:
+{{item.input}}
+
+## Expected Sentiment:
+{{item.ideal}}
+
+## Model Output:
+{{item.output}}
